@@ -1,0 +1,24 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+    instance-id: ${spring.application.name}:${server.port}
+
+
+microservice:
+  payment-service:
+    base-url: PAYMENT-SERVICE
+    endpoints:
+      do-payment: /payment/doPayment
+      payment-history: /payment/getPaymentHistory
+
+  order-service:
+    base-url: ORDER-SERVICE
+    endpoints:
+      book-order: /order/bookOrder
+      order-history: /order/getOrderHistory
