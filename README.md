@@ -24,7 +24,7 @@ A hands-on, production-inspired microservices project built with **Spring Boot**
 - 🗂️ **Centralized Configuration** — Spring Cloud Config Server serving shared & per-service configs
 - 🌐 **API Gateway** — Unified routing via Spring Cloud Gateway
 - ⚡ **Circuit Breaker & Fallback** — Resilience4j for fault tolerance
-- 🔗 **Inter-service Communication** — Using `@HttpExchange` (Spring 6+)
+- 🔗 **Inter-service Communication** — Using `RestTemplate` with Eureka-based service discovery
 - 🔄 **Retry Mechanisms** — Graceful degradation under failure
 
 ---
